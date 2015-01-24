@@ -1,86 +1,58 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Order</title>
-		<style>
-			#list, #server {
-				background-color: #CCCCCC;
-				border: 1px solid #999999;
-				padding: 20px;
-				margin-right: 20px;
-				width: 350px;
-				float: left;
-			}
-			.item {
-				position: relative;
-				width: 300px;
-				background-color: #EEEEEE;
-				border: 1px solid #999999;
-				padding: 0px 20px;
-				margin-bottom: 20px;				
-			}
-		</style>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="order.js"></script>
-		<script>		
-		$(document).ready(function()
-		{
-			order();
-		});
-		</script>
-	</head>
-
-	<body>
-	
-		<div id="list">
-		
-			<div class="item" data-id="1">
-				<p>Item 1</p>
-				<p>
-					<button type="button" class="button-move-up">Move Up</button>
-					<button type="button" class="button-move-down">Move Down</button>
-				</p>
-			</div>
-			
-			<div class="item" data-id="2">
-				<p>Item 2</p>
-				<p>
-					<button type="button" class="button-move-up">Move Up</button>
-					<button type="button" class="button-move-down">Move Down</button>
-				</p>
-			</div>
-
-			<div class="item" data-id="3">
-				<p>Item 3</p>
-				<p>
-					<button type="button" class="button-move-up">Move Up</button>
-					<button type="button" class="button-move-down">Move Down</button>
-				</p>
-			</div>
-			
-			<div class="item" data-id="4">
-				<p>Item 4</p>
-				<p>
-					<button type="button" class="button-move-up">Move Up</button>
-					<button type="button" class="button-move-down">Move Down</button>
-				</p>
-			</div>
-
-			<div class="item" data-id="5">
-				<p>Item 5</p>
-				<p>
-					<button type="button" class="button-move-up">Move Up</button>
-					<button type="button" class="button-move-down">Move Down</button>
-				</p>
-			</div>
-		
-		</div>
-		
-		<div id="server">
-			<strong>Server: order => id</strong>
-			<pre id="response"></pre>
-		</div>
-	
-	</body>
-	
+    <head>
+        <title>Order</title>
+        <link href="order.css" type="text/css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="order.js"></script>
+        <script>		
+        $(document).ready(function()
+        {
+            order();
+        });
+        </script>
+    </head>
+    <body>
+        <div id="list">
+            <div class="item" data-id="1">
+                <p>Item 1</p>
+                <p>
+                    <button type="button" class="button-move-up">Move Up</button>
+                    <button type="button" class="button-move-down">Move Down</button>
+                </p>
+            </div>
+            <div class="item" data-id="2">
+                <p>Item 2</p>
+                <p>
+                    <button type="button" class="button-move-up">Move Up</button>
+                    <button type="button" class="button-move-down">Move Down</button>
+                </p>
+            </div>
+            <div class="item" data-id="3">
+                <p>Item 3</p>
+                <p>
+                    <button type="button" class="button-move-up">Move Up</button>
+                    <button type="button" class="button-move-down">Move Down</button>
+                </p>
+            </div>
+            <div class="item" data-id="4">
+                <p>Item 4</p>
+                <p>
+                    <button type="button" class="button-move-up">Move Up</button>
+                    <button type="button" class="button-move-down">Move Down</button>
+                </p>
+            </div>
+            <div class="item" data-id="5">
+                <p>Item 5</p>
+                <p>
+                    <button type="button" class="button-move-up">Move Up</button>
+                    <button type="button" class="button-move-down">Move Down</button>
+                </p>
+            </div>
+        </div>
+        <div id="server">
+            <strong>Server: order => id</strong>
+            <pre id="response"></pre>
+        </div>
+    </body>	
 </html>
